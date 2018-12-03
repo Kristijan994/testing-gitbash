@@ -1,0 +1,672 @@
+
+/*Mobile Screens*/
+@media screen and (min-width: 1px) and (max-width: 900px) {
+	img.logo-mobile {
+		display: block;
+	}
+
+	div.selected-menu {
+		margin-top:80px;
+	}
+
+	/*X2 Info*/
+	div.x2-info {
+		width: 90%;
+		margin:auto;
+	}
+
+	div.info-container {
+		grid-template-columns: 100%;
+		padding:20px 0px;
+	}
+
+	div.left-info {
+		border:none;
+		box-shadow: none;
+	}
+
+	div.right-info {
+		padding:10px 0px;
+		text-align: center;
+	}
+
+	p.info-heading {
+		font-size:12px;
+		padding:0px 0px;
+	}
+
+	
+
+	/*Defaul Settings*/
+	div.page-wrapper {
+		grid-template-columns: 100%;
+	}
+
+	/*Hidden (But it looks GOOD!)*/
+	div.sidebar-nav {
+		display: none;
+		/*max-width: 80%;*/
+	}
+
+	/*Form Adjustments*/
+	div.documents {
+		grid-template-columns: 1fr;
+	}
+
+	div#proof {
+		margin-top:-130px;
+	}
+
+	label.mobile-label {
+		display: none;
+	}
+	
+	div.form-wrapper {
+		width: 90%;
+		padding:0px 0px;
+		padding-bottom:240px;
+		box-shadow: none;
+	}
+
+	div.select-day-month-year {
+		grid-template-columns: 100%;
+		grid-gap:5%;
+	}
+
+	div.select-country-city {
+		grid-template-columns: 1fr;
+		grid-gap:10px;
+		margin-top:50px;
+	}
+
+	div.select-zipcode-document {
+		grid-template-columns: 100%;
+		grid-gap:5%;
+	}
+
+	div.cancel-update {
+		grid-template-columns:1fr;
+		grid-gap:15%;
+	}
+
+	button.cancel,button.update {
+		width: 100%;
+	}
+
+	button.update,button.cancel {
+		font-size:14px;
+	}
+
+	/*Inputs & Labels Adjustments*/
+	label.desktop-label {
+		display: none;
+	}
+
+	div#address {
+		position: relative;
+		top:25px;
+	}
+
+	div.country-city-container {
+		position:relative;
+		top:20px;
+	}
+
+	div#zipcode-doctype {
+		position:relative;
+		top:40px;
+	}
+
+	div#docnum-docpic {
+		position:relative;
+		top:100px;
+	}
+
+	div#proof {
+		position:relative;
+		top:150px;
+	}
+
+	div.cancel-update {
+		position:relative;
+		top:160px;
+	}
+
+	/* Mobile Navigation */
+	span.mobile-icon {
+		font-size:30px;
+		position: fixed;
+		left:0;
+		top:10px;
+		z-index: 3;
+		padding:5px 10px;
+		color:#1A2340;
+	}
+
+	/*Mobile Sidebar*/
+	div.mobile-nav {
+		position:fixed;
+		top:0;
+		left:0;
+		background-color: #fff;
+		height: 100vh;
+		overflow-y:scroll;
+		z-index: 1;
+		display: none; /*Change Default to Block*/
+		width: 100%;
+	}
+
+	span.close-icon {
+		position: absolute;
+		left:0;
+		top:10px;
+		padding:0px 15px;
+		z-index: 5;
+		color:#fff;
+		font-size:40px;
+		opacity: .80;
+	}
+
+	img.logo {
+		display: none;
+	}
+	
+	/*Mobile Sidebar*/
+	div.mobile-sidebar {
+		background-image:url('../Images/sidebarNav.svg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	/*Mobile Head*/
+	div.mobile-head {
+		min-height: 200px;
+		/*background-image:url('../Images/sidebarTop.svg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;*/
+	}
+
+	div.mobile-avatar {
+		width:70%;
+		margin:auto;
+		position:relative;
+		top:100px;
+		text-align: center;
+	}
+
+	img.mobile-av {
+		max-width: 175px;
+	}
+
+	img.mobile-logo {
+		max-width: 55px;
+		position:absolute;
+		left:90%;
+		margin-top:-90px;
+	}
+
+	/*Mobile Body*/
+	div.mobile-body {
+		padding:80px 0px;
+		/*Flexbox*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		color:#7970FF;
+	}
+
+	ul.mobile-body-nav {
+		list-style-type: none;
+		text-align:center;
+		position:relative;
+		left:5px;
+	}
+
+	li.mobile-nav-item {
+		margin:15px 0px;
+	}
+
+	a.mobile-nav-link {
+		font-family: "Open Snas", sans-serif;
+		font-weight: 500;
+		font-size:17px;
+		letter-spacing: .40pt;
+		text-decoration: none;
+		/*color:#1A2340;*/
+		color:#fff;
+		opacity: .50;
+	}
+
+	a.mobile-nav-active {
+		font-weight: 700;
+	}
+
+	/*Mobile Dot Menu*/
+	div.mobile-dot-menu {
+		position:relative;
+		top:5px;
+	}
+
+	ul.mobile-dot-ul {
+		max-width: 100%;
+		margin:auto;
+		padding:15px 40px;
+		margin-top:10px;
+		background:#222B46;
+		color:#fff;
+	}
+
+
+	/*Mobile Footer*/
+	div.mobile-footer {
+		min-height: 200px;
+		background-image:url('../Images/sidebarBottom.svg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top:-80px;
+
+		/*Flexbox*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	h1.mobile-footer-heading,span.mobile-footer-txt,span.mobile-footer-level,p.mobile-footer-limit {
+		color:#fff;
+	}
+
+	h1.mobile-footer-heading {
+		font-weight: 400;
+	}
+
+	/*Mobile Dropdowns*/
+	/*Language Dropdown*/
+	ul#mobile-language {
+		position:relative;
+		top:10px;
+		padding:15px 0px;
+	}
+
+	/*My Profile Dropdown*/
+	/* -- Revision Dropdown -- */
+	ul.main-mobile-dropdown {
+		list-style-type: none;
+	}
+
+	ul.mobile-profile-dropdown {
+		list-style-type: none;
+		position:relative;
+		right:8px;
+		padding:10px 0px;
+
+	}
+
+	li.mobile-profile-item {
+		margin:7px 0px;
+	}
+
+	a.mobile-profile-link {
+		font-family: "Montserrat", sans-serif;
+		text-decoration: none;
+		/*color:#1A2340;*/
+		opacity: .70;
+		letter-spacing: .45pt;
+		font-weight: 500;
+		font-size:14px;
+		text-transform: uppercase;
+
+		color:#fff;
+	}
+
+	.dropdown-active {
+		color:red;
+	}
+
+
+	/*Enable 2FA Responsiveness*/
+	p.step-1-subheading {
+		padding:0px 0px;
+		font-size:14px;
+	}
+
+	a.install-link {
+		font-size:15px;
+	}
+
+	div.qr-container {
+		grid-template-columns: 100%;
+	}
+
+	form.qr-submit {
+		width: 100%;
+	}
+
+	div.cancel-enable {
+		left:0px;
+		grid-gap: 15%;
+		grid-template-columns: 100%;
+	}
+
+	/*New Box Menu Adjustments for Mobile*/
+	div.verification-box-container {
+		/*display: none !important;*/
+		max-width: 90%;
+		grid-template-columns: 1fr !important;
+		margin:10px 0px;
+	}
+
+	div.menu-box-body,div.menu-box-footer {
+		display: none !important;
+	}
+
+	div.menu-box-1 {
+		margin:5px 0px;
+	}
+
+	/*Funds Page Mobile/Tablet Adjustments*/
+	/*Main Adjustments*/
+	div.funds-cards-container {
+		width: 80%;
+		grid-template-columns: 1fr;
+	}
+
+	div#holding,div#dollar-card {
+		margin:5px 0px;
+	}
+
+	div#holding {
+		order:1;
+	}
+
+	div#dollar-card,div#bitcoin-card,div#ethereum-card,div#litecoin-card {
+		order:2;
+	}
+
+	div#favorites,div#assets {
+		display: none;
+	}
+
+	/*Container Adjustments*/
+	/*USD deposit*/
+	div#usd-deposit-page,div#usd-withdraw-page {
+		margin-top:10px;
+	}
+	div.usd-deposit,div.usd-withdraw {
+		grid-template-columns: 1fr;
+	}
+	h1.funds-heading {
+		font-size:16px;
+		text-align: center;
+		order:2;
+	}
+	p.selected-card-info {
+		text-align: center;
+		order:1;
+	}
+	div.usd-steps {
+		width: 100%;
+		padding:0 0;
+		margin-bottom:-10px;
+	}
+	p.attention-subheading {
+		max-width: 100%;
+	}
+	div.from,div.to {
+		margin:10px 0px;
+	}
+	div.to,div.from {
+		padding:30px 10px;
+	}
+	div.deposit-from-to {
+		grid-template-columns: 1fr;
+
+	}
+	i.from-to-arrow {
+		display: none;
+	}
+	div.deposit-history-container {
+		display: none;
+	}
+
+	/*USD withdraw*/
+	div.user-withdraw-details {
+		grid-template-columns: 1fr;
+	}
+	p.withdraw-acc {
+		margin:10px 0px;
+	}
+	div.usd-withdraw-container {
+		grid-template-columns: 1fr;
+	}
+	div.withdraw-right {
+		margin-top:30px;
+	}
+
+	/*BTC/ETH/LTC deposit/withdraw*/
+	div#bitcoin-deposit-page,div#ethereum-deposit-page,div#litecoin-deposit-page,
+	div#bitcoin-withdraw-page,div#ethereum-withdraw-page,div#litecoin-withdraw-page {
+		margin-top:15px;
+	}
+	div.crypto-step-1-2,p.step-03 {
+		display: none;
+	}
+	div.crypto-deposit {
+		grid-template-columns: 1fr;
+	}
+	div.crypto-right {
+		grid-template-columns: 1fr;
+		padding:20px 20px;
+	}
+	div.crypto-center {
+		width: 90%;
+	}
+	div.crypto-withdraw {
+		grid-template-columns: 1fr;
+	}
+	div.crypto-withdraw-left {
+		order:2;
+		margin-top:30px;
+	}
+	div.crypto-withdraw-right {
+		order:1;
+	}
+	
+	/*Overlays*/
+	div.bank-management {
+		width: 85%;
+		min-height: 70vh;
+		margin-top:45px;
+	}
+	h1.overlay-heading {
+		font-size:24px;
+	}
+	p.overlay-subheading {
+		font-size:12px;
+		margin-top:10px;
+	}
+	div.overlay-inputs {
+		grid-template-columns: 1fr;
+	}
+
+	div.funds-container {
+		padding-bottom:180px;
+	}
+
+	button#deposit-submit {
+		transform: translateX(-100px);
+	}
+
+	/*My Profile Page for Mobile*/
+	div.selected-container {
+		margin-top:70px;
+	}
+	div.update-avatar,form#update-avatar {
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 1fr;
+	}
+	div.avatar-holder {
+		
+	}
+	button.upload-avatar,button.delete-avatar {
+		max-width: 70%;
+		margin: auto;
+	}
+	div.my-profile-container {
+		grid-template-columns: 1fr;
+		padding-bottom:120px;
+	}
+	h1.profile-heading {
+		text-align: center;
+	}
+	div.profile-row-1,div.profile-row-2,div.profile-row-3,div.profile-row-4,
+	div.identity-row-1,div.identity-row-2,div.identity-row-3 {
+		grid-template-columns: 1fr;
+	}
+	div.identity-info {
+		border-left:none;
+		padding:0 0;
+	}
+
+	/*Edit Account Page for Mobile*/
+	div.edit-success {
+		top:80px;
+	}
+	div.edit-container {
+		grid-template-columns: 1fr;
+		padding-bottom:150px;
+	}
+	button.save-changes {
+		margin:auto;
+	}
+	div.edit-box-head {
+		grid-template-columns: 1fr 0.15fr;
+	}
+	div.edit-box {
+		margin:15px 0px;
+	}
+}
+
+/*Tablet Screens Screens*/
+
+
+/*Hide Mobile Labels and Nav for Laptop and Desktop*/
+@media screen and (min-width: 901px) and (max-width: 999999px) {
+	/*Disable Mobile content on Laptop and Desktop*/
+	label.mobile-label {
+		display: none;
+	}
+
+	div#mobile {
+		display: none;
+	}
+
+	span.mobile-icon {
+		display: none;
+	}
+}
+
+/*Laptop Screens*/
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+	/*Sidebar Adjustments for Laptop*/
+	p.verification-subheading {
+		display: none;
+	}
+}
+
+/*Desktop Large Screens*/
+@media screen and (min-width: 1920px) and (max-width: 3000px) {
+	/*Defaul Settings*/
+	div.page-wrapper {
+		grid-gap: 0%;
+		grid-template-columns: 15% 85%;
+	}
+
+	/*X2 Info*/
+	div.x2-info {
+		width: 80%;
+		margin:auto;
+	}
+	p.info-heading {
+		font-size:16px;
+	}
+
+	/*Sidebar Head*/
+	div.sidebar-head {
+		height: 115px;
+	}
+	img.logo {
+		right:100px;
+	}
+
+	/*Verification Menu*/
+	div.verification-menu {
+		margin-top:30px;
+	}
+	div.verification-grid {
+		width: 80%;
+		grid-gap: 2%;
+	}
+	h1.verification-heading {
+		font-size:15px;
+	}
+
+	/*Sidebar Footer*/
+	div.status-item {
+		margin-top:10px;
+	}
+
+	/*New Verification Box Menu Adjustments for Extra Large Screens*/
+	div.verification-box-container {
+		width: 80% !important;
+	}
+
+	.form-wrapper {
+		width: 80% !important;
+		padding:10px 20px !important;
+	}
+
+	p.box-heading {
+		font-size:16px !important;
+	}
+
+	p.box-subheading {
+		font-size:13px !important;
+	}
+
+	div.menu-box-footer {
+		font-size:13px !important;
+	}
+
+	/*New Adjustments for Funds Page*/
+	div.funds-cards-container,div.funds-main-container {
+		width: 80%;
+	}
+
+	
+	
+}
+
+/*Extra Large Screens*/
+@media screen and (min-width: 1920px) and (max-width: 3000px) {
+	div.funds-cards-container {
+		width: 75%;
+	}
+	div.funds-main-container {
+		width: 75%;
+		margin-top:10px;
+	}
+
+	/*Overlays*/
+	div.bank-management {
+		width: 30%;
+		min-height: 30vh;
+	}
+}

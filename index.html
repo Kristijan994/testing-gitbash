@@ -1,0 +1,296 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+        <title>X2 | User Profile</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <link href="Images/favicon.png" rel="shortcut icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Boxicons -->
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+
+
+        <!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/user-menu.css">
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/user-menu.js"></script>
+
+		
+	</head>
+		
+	<body>
+
+		<!-- X2 Preloader -->
+		<div class="preloader">
+			<div class="preloader-dot"></div>
+			<img src="Images/logoWhite.png" class="preloader-logo img-fluid">
+		</div>
+		
+		<!-- USD Managements Overlay -->
+		<div class="management-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Bank Account Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of bank withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Bank</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Name" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Bank Account</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Account" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Crypto Withdraw Managements Overlay -->
+		<div id="crypto-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Coin Address Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of coin withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Label</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Label" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Address</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Address" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Mobile & Tablet Navigation -->
+		<span id="open" class="mobile-icon">&#9776;</span>
+		<!-- Mobile Logo -->
+		<a href="index.html">
+			<img src="Images/logo-blueDark.png" class="logo-mobile img-fluid">
+		</a>
+	
+
+		<!-- Desktop -->
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Sidebar Navigation -->
+			<div class="sidebar-nav">
+				<!-- Mobile Close ICON -->
+				<span class="close-icon">&times;</span>
+				
+				<div class="sidebar-head">
+					<a href="index.html">
+						<img src="Images/logoWhite.png" class="logo img-fluid">
+					</a>
+				</div>
+
+				<div class="sidebar-body">
+					<!-- User Avatar -->
+					<div class="avatar-center">
+						<img src="Images/userAvatar.svg" class="avatar img-fluid">
+					</div>
+
+					<!-- First User Navigation -->
+					<div class="profile-navigation-1">
+						<ul class="my-account">
+							<li class="my-account-item">
+								<a href="#" class="my-account-link"><i class="first-nav-icon fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kristijan Popchev&nbsp;<i class="my-account-arrow lang-arrow not-active fas fa-angle-down"></i></a>
+							</li>
+						</ul>
+
+						<!-- My Account Dropdown -->
+						<ul id="account-dropdown" class="first-nav">
+							<a href="my-profile.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-person-booth"></i><span class="nav-text">My Profile</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-ticket-alt"></i><span class="nav-text">Tickets</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li id="language" class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-language"></i><span class="nav-text">Languages <i class="lang-arrow not-active fas fa-angle-down"></i></span>
+									</div>
+
+									
+								</li>
+								<!-- Dropdown -->
+									<ul class="language-dropdown">
+										<li class="language-list text-center">
+											<a href="#" class="en language-link">
+												<img src="Images/usa-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="ch language-link">
+												<img src="Images/china-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="kr language-link">
+												<img src="Images/korea-flag.png" class="flags img-fluid">
+											</a>
+										</li>
+									</ul>
+							</a>
+
+							<a href="edit-account.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active far fa-edit"></i><span class="nav-text">Edit Account</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-code"></i><span class="nav-text">API Tokens</span>
+									</div>
+								</li>
+							</a>
+
+
+							<a href="login.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-sign-out-alt"></i><span class="nav-text">Logout</span>
+									</div>
+								</li>
+							</a>
+						</ul>
+
+						<!-- End of First User Navigation -->
+					</div>
+
+					<!-- Second User Navigation -->
+					<div class="profile-navigation-2">
+
+						
+						<!-- New User Menu -->
+						<div class="user-menu">
+							<div id="menu-list" class="exchange">
+								<i class="first-nav-icon not-active fas fa-exchange-alt"></i>
+								<span class="menu-title">Exchange</span>
+							</div>
+							
+							<a href="funds.html" class="sidebar-link">
+							<div id="menu-list" class="funds"> <!-- menu-list-active -->
+								<i class="first-nav-icon not-active fas fa-funnel-dollar"></i>
+								<span class="menu-title">Funds</span>
+							</div>
+							</a>
+
+							<div id="menu-list" class="history">
+								<i class="first-nav-icon not-active fas fa-history"></i>
+								<span class="menu-title">History</span>
+							</div>
+							
+							<a href="verification.html" class="sidebar-link">
+							<div id="menu-list" class="verification">
+								<i class="first-nav-icon not-active fas fa-wrench"></i>
+								<span class="menu-title">Verification</span>
+							</div>
+							</a>
+						</div>
+
+
+
+
+						<!-- End of Second User Navigation -->
+					</div>
+
+					<!-- End of Sidebar Body -->
+				</div>
+
+				<div class="sidebar-footer">
+
+					<div class="levels-limits">
+						<span class="level-limit-info">Level</span>
+						<div class="current-level-limit">
+							<span class="badge-level">2</span>
+						</div>
+
+						<span class="level-limit-info">Daily</span>
+						<div class="current-level-limit" style="text-align: left;">
+							<span class="badge-limit">$10,000</span>
+						</div>
+					</div>
+
+					<div class="account-info">
+						<p class="verifications-info">
+							Continue with account verifications to level up and increase your daily limits up to <span class="unlimited">UNLIMITED</span>
+						</p>
+					</div>
+				</div>
+				<!-- End of Sidebar Navigation -->
+			</div>
+
+
+
+			
+
+
+
+
+			
+			<!-- Menu Selection (right column) 1 -->
+			<div class="selected-menu">
+
+			<!-- End of Menu Selection (right column) -->
+			</div>
+					
+
+					
+
+					
+					
+
+			<!-- Page Wrapper -->
+			<!-- End of Page Wrapper -->
+			</div>
+		
+	</body>
+
+</html>

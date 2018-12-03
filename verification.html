@@ -1,0 +1,747 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+        <title>X2 | User Profile</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <link href="Images/favicon.png" rel="shortcut icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Boxicons -->
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+
+
+        <!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/user-menu.css">
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/user-menu.js"></script>
+
+		
+	</head>
+		
+	<body>
+
+		<!-- X2 Preloader -->
+		<div class="preloader-other">
+			<div class="preloader-dot"></div>
+			<img src="Images/logoWhite.png" class="preloader-logo img-fluid">
+		</div>
+		
+		<!-- USD Managements Overlay -->
+		<div class="management-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Bank Account Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of bank withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Bank</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Name" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Bank Account</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Account" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Crypto Withdraw Managements Overlay -->
+		<div id="crypto-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Coin Address Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of coin withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Label</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Label" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Address</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Address" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Mobile & Tablet Navigation -->
+		<span id="open" class="mobile-icon">&#9776;</span>
+		<!-- Mobile Logo -->
+		<a href="index.html">
+			<img src="Images/logo-blueDark.png" class="logo-mobile img-fluid">
+		</a>
+		
+	
+
+		<!-- Desktop -->
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Sidebar Navigation -->
+			<div class="sidebar-nav">
+				<!-- Mobile Close ICON -->
+				<span class="close-icon">&times;</span>
+
+				<div class="sidebar-head">
+					<a href="index.html">
+						<img src="Images/logoWhite.png" class="logo img-fluid">
+					</a>
+				</div>
+
+				<div class="sidebar-body">
+					<!-- User Avatar -->
+					<div class="avatar-center">
+						<img src="Images/userAvatar.svg" class="avatar img-fluid">
+					</div>
+
+					<!-- First User Navigation -->
+					<div class="profile-navigation-1">
+						<ul class="my-account">
+							<li class="my-account-item">
+								<a href="#" class="my-account-link"><i class="first-nav-icon fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kristijan Popchev&nbsp;<i class="my-account-arrow lang-arrow not-active fas fa-angle-down"></i></a>
+							</li>
+						</ul>
+
+						<!-- My Account Dropdown -->
+						<ul id="account-dropdown" class="first-nav">
+
+							<a href="my-profile.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-person-booth"></i><span class="nav-text">My Profile</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-ticket-alt"></i><span class="nav-text">Tickets</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li id="language" class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-language"></i><span class="nav-text">Languages <i class="lang-arrow not-active fas fa-angle-down"></i></span>
+									</div>
+
+									
+								</li>
+								<!-- Dropdown -->
+									<ul class="language-dropdown">
+										<li class="language-list text-center">
+											<a href="#" class="en language-link">
+												<img src="Images/usa-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="ch language-link">
+												<img src="Images/china-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="kr language-link">
+												<img src="Images/korea-flag.png" class="flags img-fluid">
+											</a>
+										</li>
+									</ul>
+							</a>
+
+							<a href="edit-account.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active far fa-edit"></i><span class="nav-text">Edit Account</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-code"></i><span class="nav-text">API Tokens</span>
+									</div>
+								</li>
+							</a>
+
+
+							<a href="login.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-sign-out-alt"></i><span class="nav-text">Logout</span>
+									</div>
+								</li>
+							</a>
+						</ul>
+						
+						<!-- End of First User Navigation -->
+					</div>
+					
+					
+
+					<!-- Second User Navigation -->
+					<div class="profile-navigation-2">
+
+						
+						<!-- New User Menu -->
+						<div class="user-menu">
+							<div id="menu-list" class="exchange">
+								<i class="first-nav-icon not-active fas fa-exchange-alt"></i>
+								<span class="menu-title">Exchange</span>
+							</div>
+							
+							<a href="funds.html" class="sidebar-link">
+							<div id="menu-list" class="funds"> <!-- menu-list-active -->
+								<i class="first-nav-icon not-active fas fa-funnel-dollar"></i>
+								<span class="menu-title">Funds</span>
+							</div>
+							</a>
+
+							<div id="menu-list" class="history">
+								<i class="first-nav-icon not-active fas fa-history"></i>
+								<span class="menu-title">History</span>
+							</div>
+							
+							<a href="verification.html" class="sidebar-link">
+							<div id="menu-list" class="verification menu-list-active">
+								<i class="first-nav-icon not-active fas fa-wrench" style="opacity: 1;"></i>
+								<span class="menu-title">Verification</span>
+							</div>
+							</a>
+						</div>
+
+
+
+
+						<!-- End of Second User Navigation -->
+					</div>
+
+					<!-- End of Sidebar Body -->
+				</div>
+
+				<div class="sidebar-footer">
+					<!-- <h1 class="footer-header">Verification Levels and Limits</h1>
+					<div class="level-badge">
+						<span class="level-txt">Level <span class="level">2</span></span>
+					</div>
+					<p class="daily-limit">$10,000 Daily Limit</p>
+					<img src="Images/fa-success.svg" alt="" class="fa-success img-fluid"> -->
+
+					<div class="levels-limits">
+						<span class="level-limit-info">Level</span>
+						<div class="current-level-limit">
+							<span class="badge-level">2</span>
+						</div>
+
+						<span class="level-limit-info">Daily</span>
+						<div class="current-level-limit" style="text-align: left;">
+							<span class="badge-limit">$10,000</span>
+						</div>
+					</div>
+					
+					<div class="account-info">
+						<p class="verifications-info">
+							Continue with account verifications to level up and increase your daily limits up to <span class="unlimited">UNLIMITED</span>
+						</p>
+					</div>
+				</div>
+				<!-- End of Sidebar Navigation -->
+			</div>
+
+
+
+			
+
+
+
+
+			
+			<!-- Menu Selection (right column) 1 -->
+			<div class="selected-menu">
+
+				<!-- X2 Info -->
+				<div class="x2-info">
+					<div class="info-container">
+						<div class="left-info">
+							<i class="info-icon fas fa-info fa-2x"></i>
+						</div>
+						<div class="right-info">
+							<p class="info-heading">
+								In order to protect your bitcoins and personal information, we strongly suggest that you use Two-Factor Authentication.
+							</p>
+						</div>
+
+						<div class="close-container">
+						<span class="close-info">&times;</span>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				
+			<!-- New Verification Menu -->
+	<div id="verification-wrapper">
+				<div class="verification-box-container">
+					<!-- Menu Box 1 -->
+					<div id="box-1-menu" class="menu-box-1">
+
+						<div class="menu-box-head">
+							<p class="box-1 box-heading">Verify Email</p>
+							<i class="icon-1 left-ver-icon fas fa-mail-bulk"></i>
+						</div>
+
+						
+
+						<div class="menu-box-body">
+							<p class="box-1 box-subheading">
+								Your email adress has been verified successfully, remember and protect this e-mail address, it is the single certificate for your account
+							</p>
+						</div>
+
+						
+
+						<div class="footer-1 menu-box-footer">
+							<span class="box-1 box-footer-left">Start</span>
+							<span class="box-1 box-footer-right">Incomplete</span>
+						</div>
+
+						<!-- End of Menu Box 1 -->
+					</div>
+
+					<!-- Menu Box 2 -->
+					<div id="box-2-menu" class="menu-box-1">
+
+						<div class="menu-box-head">
+							<p class="box-2 box-heading">Verify Account</p>
+							<i class="icon-2 left-ver-icon fas fa-spinner"></i>
+						</div>
+
+						
+
+						<div class="menu-box-body">
+							<p class="box-2 box-subheading">
+								Help keep the bad guys out of your account by using both your password and your phone
+								<span style="visibility:hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</p>
+						</div>
+
+						
+
+						<div class="footer-2 menu-box-footer">
+							<span class="box-2 box-footer-left">Start</span>
+							<span class="box-2 box-footer-right">Incomplete</span>
+						</div>
+
+						<!-- End of Menu Box 1 -->
+					</div>
+
+					<!-- Menu Box 3 -->
+					<div id="box-3-menu" class="menu-box-1">
+
+						<div class="menu-box-head">
+							<p class="box-3 box-heading">Verify Identity</p>
+							<i class="icon-3 left-ver-icon fas fa-id-card-alt"></i>
+						</div>
+
+						
+
+						<div class="menu-box-body">
+							<p class="box-3 box-subheading">
+								Your email adress has been verified successfully, remember and protect this e-mail address, it is the single certificate for your account
+							</p>
+						</div>
+
+						
+
+						<div class="footer-3 menu-box-footer">
+							<span class="box-3 box-footer-left">Start</span>
+							<span class="box-3 box-footer-right">Incomplete</span>
+						</div>
+
+						<!-- End of Menu Box 1 -->
+					</div>
+
+					<!-- Menu Box 4 -->
+					<div id="box-4-menu" class="menu-box-1">
+
+						<div class="menu-box-head">
+							<p class="box-4 box-heading">Enable 2FA</p>
+							<i class="icon-4 left-ver-icon fas fa-magic"></i>
+						</div>
+
+
+
+						<div class="menu-box-body">
+							<p class="box-4 box-subheading">
+								Two-Factor Authentication provides another layer of security to your account.
+								<span style="visibility:hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</p>
+						</div>
+
+						
+
+						<div class="footer-4 menu-box-footer">
+							<span class="box-4 box-footer-left">Start</span>
+							<span class="box-4 box-footer-right">Incomplete</span>
+						</div>
+
+						<!-- End of Menu Box 1 -->
+					</div>
+				</div>
+				
+				
+				<!-- Form Wrapper -->
+				<div class="form-wrapper">
+					<form class="verify-account-form">
+						<div class="label-inputs">
+							<label id="main-verify-label" class="verify-label"><!-- Fill in the name which is consistent with your Credentials. --> Fill in your information in the form below to complete account verification <!-- <span style="font-size:25px;opacity: .20;">*</span> --></label>
+							
+						</div>
+
+						 <!-- 1 break between each input -->
+
+					
+							<label class="no-label verify-label">Birth Date</label>
+							
+							<div class="select-day-month-year">
+								<input id="verify-input" class="realname" type="text" name="realname" placeholder="Your Real Name" required>
+								<!-- Select DAY -->
+								<select id="verify-select" class="select-day">
+									<option value="0">DAY</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+								</select>
+
+								<!-- Select MONTH -->
+								<select id="verify-select" class="select-day">
+									<option value="0">MONTH</option>
+									<option value="January">January</option>
+									<option value="February">February</option>
+									<option value="March">March</option>
+									<option value="April">April</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="August">August</option>
+									<option value="September">September</option>
+									<option value="October">October</option>
+									<option value="November">November</option>
+									<option value="December">December</option>
+								</select>
+
+								<!-- Select YEAR -->
+								<select id="verify-select" class="select-day">
+									<option value="0">YEAR</option>
+									<option value="1948">1948</option>
+									<option value="1949">1949</option>
+									<option value="1950">1950</option>
+									<option value="1951">1951</option>
+									<option value="1952">1952</option>
+									<option value="1953">1953</option>
+									<option value="1954">1954</option>
+									<option value="1955">1955</option>
+									<option value="1956">1956</option>
+									<option value="1957">1957</option>
+									<option value="1958">1958</option>
+									<option value="1959">1959</option>
+									<option value="1960">1960</option>
+									<option value="1961">1961</option>
+									<option value="1962">1962</option>
+									<option value="1963">1963</option>
+									<option value="1964">1964</option>
+									<option value="1965">1965</option>
+									<option value="1966">1966</option>
+									<option value="1967">1967</option>
+									<option value="1968">1968</option>
+									<option value="1969">1969</option>
+									<option value="1970">1970</option>
+									<option value="1971">1971</option>
+									<option value="1972">1972</option>
+									<option value="1973">1973</option>
+									<option value="1974">1974</option>
+									<option value="1975">1975</option>
+									<option value="1976">1976</option>
+									<option value="1977">1977</option>
+									<option value="1978">1978</option>
+									<option value="1979">1979</option>
+									<option value="1980">1980</option>
+									<option value="1981">1981</option>
+									<option value="1982">1982</option>
+									<option value="1983">1983</option>
+									<option value="1984">1984</option>
+									<option value="1985">1985</option>
+									<option value="1986">1986</option>
+									<option value="1987">1987</option>
+									<option value="1988">1988</option>
+									<option value="1989">1989</option>
+									<option value="1990">1990</option>
+									<option value="1991">1991</option>
+									<option value="1992">1992</option>
+									<option value="1993">1993</option>
+									<option value="1994">1994</option>
+									<option value="1995">1995</option>
+									<option value="1996">1996</option>
+									<option value="1997">1997</option>
+									<option value="1998">1998</option>
+									<option value="1999">1999</option>
+									<option value="2000">2000</option>
+									<option value="2001">2001</option>
+									<option value="2002">2002</option>
+									<option value="2003">2003</option>
+									<option value="2004">2004</option>
+									<option value="2005">2005</option>
+									<option value="2006">2006</option>
+								</select>
+
+								<!-- End of Select DAY/MONTH/YEAR container -->
+							</div>
+
+							 <!-- 1 break between each input -->
+
+
+						<!-- Adress input -->
+						<!-- <div id="address" class="label-inputs">
+							<label class="no-label verify-label">Address</label>
+							<input id="verify-input" class="address" type="text" name="address" placeholder="e.g. Mulholland Drive">
+						</div> -->
+
+						
+						<!-- Country - City -->
+						<div class="country-city-container">
+						
+							<div class="select-country-city">
+								
+								<input id="verify-input" class="country" type="text" name="realname" placeholder="Country">
+								<input id="verify-input" class="city" type="text" name="realname" placeholder="City">
+								<input id="verify-input" class="address" type="text" name="address" placeholder="Your Address | e.g. Mulholland Drive">
+								<input id="verify-input" class="zipcode" type="text" name="zipcode" placeholder="Zipcode">
+							</div>
+							
+						</div>
+
+						<!-- Zipcode - Document Type -->
+						<div id="zipcode-doctype" class="country-city-container">
+						<div class="documents">
+							<!-- Select Document Inputs -->
+								<select id="verify-select" class="select-document select-day" required>
+									<option value="/">Document Type</option>
+									<option value="ID card">ID Card</option>
+									<option value="March">Passport</option>
+									<option value="April">Driver's License</option>
+								</select>
+								<input id="verify-input" class="docnum" type="text" name="realname" placeholder="Document Number" required>
+								
+									<span class="choose"><!-- Choose File -->Document Photo</span>
+      								<input type='file' class="upload">
+						</div>
+
+						</div>
+
+
+						<!-- Document Number - Document Photo -->
+						<div id="docnum-docpic" class="country-city-container">
+						<div class="select-country-city">
+							<label id="" class="no-label desktop-label verify-label">Document Number <span style="font-size:25px;opacity: .20;">*</span></label>
+							<label id="city" class="no-label desktop-label document-photo verify-label">Document Photo</label>
+						</div>
+							<div class="select-zipcode-document">
+								<label id="" class="mobile-label verify-label">Document Number <span style="font-size:25px;opacity: .20;">*</span></label>
+								
+								<!-- Choose Document Photo -->
+								<!-- <input id="verify-input" type="file" name="myFile" placeholder="Choose"> -->
+							<label id="city" class="mobile-label document-photo verify-label">Document Photo</label>
+							
+								
+							</div>
+
+						</div>
+
+
+						<!-- Proof of Residence - Proof of Residence Photo -->
+						<div id="proof" class="country-city-container">
+						<div class="proofs">
+							<label id="" class="no-label desktop-label verify-label">Proof of Residence<span style="font-size:25px;opacity: .20;">*</span></label>
+							<label id="city" class="no-label desktop-label verify-label">Proof of Residence Photo <span style="font-size:25px;opacity: .20;">*</span></label>
+						</div>
+							<div class="select-zipcode-document">
+								<!-- Select Proof of Residence -->
+								<label id="" class="mobile-label verify-label">Proof of Residence<span style="font-size:25px;opacity: .20;">*</span></label>
+								<select id="verify-select" class="select-document select-day" required>
+									<option value="/">Proof of Residence</option>
+									<option value="ID card">Bank Statement</option>
+									<option value="March">Tax Bill</option>
+								</select>
+								<!-- Choose Document Photo -->
+								<!-- <input id="verify-input" type="file" name="myFile" placeholder="Choose"> -->
+								<label id="city" class="mobile-label verify-label">Proof of Residence Photo <span style="font-size:25px;opacity: .20;">*</span></label>
+							<span class="choose">Proof of Residence Photo</span>
+      						<input type='file' class="upload">
+								
+							</div>
+
+						</div>
+
+						<br><br>
+
+						<!-- Cancel and Update buttons -->
+						<div class="cancel-update">
+							<div class="cancel-left">
+								<button type="reset" class="cancel">Cancel</button>
+							</div>
+
+							<div class="update-right">
+								<button type="submit" class="update">Update ID Document</button>
+							</div>
+						</div>
+						
+
+						
+						</form>
+
+
+						<!-- Enable 2FA Container -->
+						<div class="enable-container">
+							<div class="main-steps-container">
+							<!-- STEP 1 -->
+							<div class="steps">
+								<h1 class="step-1-heading text-left">01</h1>
+								<p class="step-1-subheading">
+									Install Google Authenticator app on your smart phone and open it. <a href="https://support.google.com/accounts/answer/1066447" target="_blank" class="installation">Installation Instruction.</a>
+								</p>
+								<hr id="fa-line">
+
+								<ul class="install-list">
+									<li class="install-item">
+										<a href="https://itunes.apple.com/cn/app/google-authenticator/id388497605?mt=8" target="_blank" class="install-link">Download for Iphone iOS</a>
+									</li>
+									<li class="install-item">
+										<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2" target="_blank" class="install-link">Download for Android</a>
+									</li>
+								</ul>
+							</div>
+
+
+							<!-- STEP 2 -->
+							<div id="step2" class="steps">
+								<h1 class="step-1-heading text-left">02</h1>
+								<p class="step-1-subheading">
+									Scan the following QR code with Google Authenticator APP，or add cipher text to the validator manually.
+								</p>
+								<hr id="fa-line">
+
+								<div class="qr-container">
+									<p class="qr-para">QR Code</p>
+									<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+         							class="qr-scanner img-fluid">
+         							<div class="gen-container">
+							        	<input type="text" class="qr-input" id="content" placeholder="3!qeq16rqaaraw1">
+							        	<button type="button" class="qr-button" id="generate"><i class="fas fa-redo-alt"></i></button>
+							        </div>
+								</div>
+							</div>
+
+							<div id="step3" class="steps">
+								<h1 class="step-1-heading text-left">03</h1>
+								<p class="step-1-subheading">
+									Fill in the dynamic password displayed by your phone to activate Two-Factor Authentication.
+								</p>
+								
+								<form class="qr-submit">
+									<input id="verify-input" class="qrsubmit" type="text" name="qrsubmit" placeholder="Password on the authenticator" required>
+								
+								<br><br>	
+
+							<div class="cancel-enable">
+								<div class="cancel-left">
+									<button type="reset" class="cancel">Cancel</button>
+								</div>
+
+								<div class="update-right">
+									<button type="submit" class="update">Enable</button>
+								</div>
+							</div>
+								</form>
+							</div>
+						</div>
+							
+
+
+							<!-- End of Enable 2FA Container -->
+						</div>
+							<!-- End of Form Wrapper -->
+						</div>
+
+			<!-- End of Menu Selection (right column) -->
+			</div>
+					
+
+					
+
+					
+					
+
+			<!-- Page Wrapper -->
+			<!-- End of Page Wrapper -->
+			</div>
+		
+	</body>
+
+</html>

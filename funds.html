@@ -1,0 +1,1353 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+        <title>X2 | User Profile</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <link href="Images/favicon.png" rel="shortcut icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Boxicons -->
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+
+
+        <!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/user-menu.css">
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/user-menu.js"></script>
+
+		
+	</head>
+		
+	<body>
+
+		<!-- X2 Preloader -->
+		<div class="preloader-other">
+			<div class="preloader-dot"></div>
+			<img src="Images/logoWhite.png" class="preloader-logo img-fluid">
+		</div> 
+
+
+		
+		<!-- USD Managements Overlay -->
+		<div class="management-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Bank Account Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of bank withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Bank</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Name" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Bank Account</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Bank Account" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Crypto Withdraw Managements Overlay -->
+		<div id="crypto-overlay">
+			<span class="overlay-close">&times</span>
+			<div class="bank-management">
+				<h1 class="overlay-heading">Coin Address Management</h1>
+				<p class="overlay-subheading">To facilitate the choice of coin withdrawals address</p>
+			
+			<form id="form-overlay">
+				<div class="overlay-inputs">
+					<div class="overlay-left">
+						<p id="overlay-description" class="funds-subheading">Label</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Label" name="realname" required>
+					</div>
+
+					<div class="overlay-right">
+						<p id="overlay-description" class="funds-subheading">Address</p>
+						<input id="verify-input" class="input-overlay country" type="text" placeholder="Your Address" name="realname" required>
+					</div>
+
+					<div class="overlay-button">
+						<button type="submit" class="overlay-submit">Add</button>
+					</div>
+				</div>
+			</form>	
+			</div>
+		</div>
+
+		<!-- Mobile & Tablet Navigation -->
+		<span id="open" class="mobile-icon">&#9776;</span>
+		<!-- Mobile & Tablet Navigation -->
+		<span id="open" class="mobile-icon">&#9776;</span>
+		<!-- Mobile Logo -->
+		<a href="index.html">
+			<img src="Images/logo-blueDark.png" class="logo-mobile img-fluid">
+		</a>
+	
+
+		<!-- Desktop -->
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Sidebar Navigation -->
+			<div class="sidebar-nav">
+				<!-- Mobile Close ICON -->
+				<span class="close-icon">&times;</span>
+
+				<div class="sidebar-head">
+					<a href="index.html">
+						<img src="Images/logoWhite.png" class="logo img-fluid">
+					</a>
+				</div>
+
+				<div class="sidebar-body">
+					<!-- User Avatar -->
+					<div class="avatar-center">
+						<img src="Images/userAvatar.svg" class="avatar img-fluid">
+					</div>
+
+					<!-- First User Navigation -->
+					<div class="profile-navigation-1">
+						<ul class="my-account">
+							<li class="my-account-item">
+								<a href="#" class="my-account-link"><i class="first-nav-icon fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kristijan Popchev&nbsp;<i class="my-account-arrow lang-arrow not-active fas fa-angle-down"></i></a>
+							</li>
+						</ul>
+
+						<!-- My Account Dropdown -->
+						<ul id="account-dropdown" class="first-nav">
+							<a href="my-profile.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-person-booth"></i><span class="nav-text">My Profile</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-ticket-alt"></i><span class="nav-text">Tickets</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li id="language" class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-language"></i><span class="nav-text">Languages <i class="lang-arrow not-active fas fa-angle-down"></i></span>
+									</div>
+
+									
+								</li>
+								<!-- Dropdown -->
+									<ul class="language-dropdown">
+										<li class="language-list text-center">
+											<a href="#" class="en language-link">
+												<img src="Images/usa-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="ch language-link">
+												<img src="Images/china-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="kr language-link">
+												<img src="Images/korea-flag.png" class="flags img-fluid">
+											</a>
+										</li>
+									</ul>
+							</a>
+
+							<a href="edit-account.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active far fa-edit"></i><span class="nav-text">Edit Account</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-code"></i><span class="nav-text">API Tokens</span>
+									</div>
+								</li>
+							</a>
+
+
+							<a href="login.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-sign-out-alt"></i><span class="nav-text">Logout</span>
+									</div>
+								</li>
+							</a>
+						</ul>
+
+						<!-- End of First User Navigation -->
+					</div>
+
+					<!-- Second User Navigation -->
+					<div class="profile-navigation-2">
+
+						
+						<!-- New User Menu -->
+						<div class="user-menu">
+							<div id="menu-list" class="exchange">
+								<i class="first-nav-icon not-active fas fa-exchange-alt"></i>
+								<span class="menu-title">Exchange</span>
+							</div>
+							
+							<a href="funds.html" class="sidebar-link">
+							<div id="menu-list" class="funds menu-list-active"> <!-- menu-list-active -->
+								<i class="first-nav-icon not-active fas fa-funnel-dollar" style="opacity: 1;"></i>
+								<span class="menu-title">Funds</span>
+							</div>
+							</a>
+
+							<div id="menu-list" class="history">
+								<i class="first-nav-icon not-active fas fa-history"></i>
+								<span class="menu-title">History</span>
+							</div>
+							
+							<a href="verification.html" class="sidebar-link">
+							<div id="menu-list" class="verification">
+								<i class="first-nav-icon not-active fas fa-wrench"></i>	
+								<span class="menu-title">Verification</span>
+							</div>
+							</a>
+						</div>
+
+
+
+
+						<!-- End of Second User Navigation -->
+					</div>
+
+					<!-- End of Sidebar Body -->
+				</div>
+
+				<div class="sidebar-footer">
+					<!-- <h1 class="footer-header">Verification Levels and Limits</h1>
+					<div class="level-badge">
+						<span class="level-txt">Level <span class="level">2</span></span>
+					</div>
+					<p class="daily-limit">$10,000 Daily Limit</p>
+					<img src="Images/fa-success.svg" alt="" class="fa-success img-fluid"> -->
+
+					<div class="levels-limits">
+						<span class="level-limit-info">Level</span>
+						<div class="current-level-limit">
+							<span class="badge-level">2</span>
+						</div>
+
+						<span class="level-limit-info">Daily</span>
+						<div class="current-level-limit" style="text-align: left;">
+							<span class="badge-limit">$10,000</span>
+						</div>
+					</div>
+
+					<div class="account-info">
+						<p class="verifications-info">
+							Continue with account verifications to level up and increase your daily limits up to <span class="unlimited">UNLIMITED</span>
+						</p>
+					</div>
+				</div>
+				<!-- End of Sidebar Navigation -->
+			</div>
+
+
+
+			
+
+
+
+
+			
+			<!-- Menu Selection (right column) 1 -->
+			<div class="selected-menu">
+
+				<!-- Funds Container -->
+				<div class="funds-container">
+					<!-- Funds Cards Container -->
+					<div class="funds-cards-container">
+						
+						<!-- Main Funds Card -->
+						<!-- Dollar Card -->
+						<div id="dollar-card" class="funds-main-card">
+							<div class="funds-main-head">
+								<i class="main-card-icon fas fa-dollar-sign"></i>
+								<p class="main-currency">USD</p>
+							</div>
+
+							<div class="funds-main-body">
+								<p class="available-funds">available funds</p>
+								<p class="funds">15,17245</p>
+							</div>
+
+							<div class="funds-main-footer">
+								<p id="usd-deposit" class="deposit">Deposit</p>
+								<p id="usd-withdraw" class="withdraw">Withdraw</p>
+							</div>
+						</div>
+						
+						<!-- Bitcoin Card -->
+						<div id="bitcoin-card" class="funds-main-card">
+							<div class="funds-main-head">
+								<i class="main-card-icon fab fa-bitcoin"></i>
+								<p class="main-currency">BTC</p>
+							</div>
+
+							<div class="funds-main-body">
+								<p class="available-funds">available funds</p>
+								<p class="funds">0.00223</p>
+							</div>
+
+							<div class="funds-main-footer">
+								<p id="btc-deposit" class="deposit">Deposit</p>
+								<p id="btc-withdraw" class="withdraw">Withdraw</p>
+							</div>
+						</div>
+
+						<!-- Ethereum Card -->
+						<div id="ethereum-card" class="funds-main-card">
+							<div class="funds-main-head">
+								<i class="main-card-icon fab fa-ethereum"></i>
+								<p class="main-currency">ETH</p>
+							</div>
+
+							<div class="funds-main-body">
+								<p class="available-funds">available funds</p>
+								<p class="funds">0.02234</p>
+							</div>
+
+							<div class="funds-main-footer">
+								<p id="eth-deposit" class="deposit">Deposit</p>
+								<p id="eth-withdraw" class="withdraw">Withdraw</p>
+							</div>
+						</div>
+
+						<!-- Litecoin Card -->
+						<div id="litecoin-card" class="funds-main-card">
+							<div class="funds-main-head">
+								<img id="litecoin-main-icon" src="Images/Litecoin/litecoin-white.png" alt="" class="img-fluid">
+								<p class="main-currency">LTC</p>
+							</div>
+
+							<div class="funds-main-body">
+								<p class="available-funds">available funds</p>
+								<p class="funds">9,19283</p>
+							</div>
+
+							<div class="funds-main-footer">
+								<p id="ltc-deposit" class="deposit">Deposit</p>
+								<p id="ltc-withdraw" class="withdraw">Withdraw</p>
+							</div>
+						</div>
+
+						<!-- Holdings Funds Card -->
+						<div id="holding" class="funds-holding-card">
+							<div class="funds-holding-head">
+							
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+								<span class="holding-value">15,17245</span>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+								<span class="holding-value">0.02234</span>
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+								<span class="holding-value">0.00223</span>
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+								<span class="holding-value">9,19283</span>
+							</div>
+
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+								<span class="holding-value">15,17245</span>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+								<span class="holding-value">0.02234</span>
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+								<span class="holding-value">0.00223</span>
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+								<span class="holding-value">9,19283</span>
+							</div>
+
+							</div>
+
+							<div class="funds-holding-footer">
+								<p class="holding">Holding</p>
+							</div>
+						</div>
+
+						<!-- Favorites Funds Card -->
+						<div id="favorites" class="funds-holding-card">
+							<div class="funds-holding-head">
+							
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+								<i class="fav-currency far fa-star"></i>
+							</div>
+
+							</div>
+
+							<div class="funds-holding-footer">
+								<p class="holding">Favorites</p>
+							</div>
+						</div>
+
+						<!-- All Assets Funds Card -->
+						<div id="assets" class="funds-holding-card">
+							<div class="funds-holding-head">
+
+							<input type="text" class="assets-search" placeholder="Search...">
+
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+							</div>
+
+							<div id="dollar-select" class="holding-items">
+								<i class="dollar-icon funds-default-icon fas fa-dollar-sign"></i>
+								<p class="holding-currency">USD</p>
+							</div>
+
+							<div id="ethereum-select" class="holding-items">
+								<i class="eth-icon funds-default-icon fab fa-ethereum"></i>
+								<p class="holding-currency">Ethereum</p>
+								
+							</div>
+
+							<div id="bitcoin-select" class="holding-items">
+								<i class="funds-default-icon fab fa-bitcoin"></i>
+								<p class="holding-currency">Bitcoin</p>
+								
+							</div>
+
+							<div id="litecoin-select" class="holding-items">
+								<img src="Images/Litecoin/litecoin-darkBlue.png" alt="" class="litecoin-icon img-fluid">
+								<p class="holding-currency">Litecoin</p>
+								
+							</div>
+
+							</div>
+
+							<div class="funds-holding-footer">
+								<p class="holding">All Assets</p>
+							</div>
+						</div>
+
+						<!-- End of Funds Cards -->
+					</div>
+
+					<!-- Funds Main Container -->
+				<div class="funds-main-container">
+
+	<!-- ---------- USD Currency Pages ---------- -->
+
+					<!-- USD Deposit Page -->
+					<div id="usd-deposit-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To deposit via Bank transfer, please follow the steps below</h1>
+							<p class="selected-card-info">USD <br>
+								<span class="deposit">deposit</span>
+							</p>
+						</div>
+
+						<div class="usd-steps">
+								<div class="step-sort">
+									<div class="step">
+										<span class="step">01</span>
+
+										<p class="step-info">Submit the form to get the identification code.</p>
+									</div>
+
+									<div class="step">
+										<span class="step">02</span>
+
+										<p class="step-info">Transfer the money to exchange's bank account. Please make sure your referral code was written on the form you fill in.</p>
+									</div>
+
+									<div class="step">
+										<span class="step">03</span>
+
+										<p class="step-info">Your deposit will be confirmed as soon as the money is received.</p>
+									</div>
+
+
+								</div>
+							</div>
+
+							<hr class="funds-hr"><br>
+
+							<h1 class="attention">Attention</h1>
+							<p class="attention-subheading">The name of your bank account must be the same as your account name on our site, otherwise your deposit may fail.</p>
+							
+							<br><hr class="funds-hr"><br>
+
+						<form id="deposit-usd">
+							<div class="deposit-from-to">
+							
+								<div class="from">
+									<h1 class="from-heading">FROM</h1>
+									<span class="deposit-name">Your Name: <span class="deposit-owner">Tri Nguyen</span></span><br>
+									
+									<p class="funds-subheading">Deposit Account (<span class="usd-manage manage">Manage</span>)</p>
+									<input id="verify-input" class="country" type="text" name="realname" required>
+
+									<p class="funds-subheading">Deposit Amount</p>
+									<input id="verify-input" class="country" type="text" placeholder="at least 10 USD" name="realname" required>
+								</div>
+
+								<i class="from-to-arrow fas fa-long-arrow-alt-right"></i>
+	
+								<div class="to">
+									<h1 class="from-heading">TO</h1>
+									<span class="deposit-name">Name: <span class="deposit-owner">Demo Serviços Digitais</span></span><br>
+									<span class="deposit-name">Account: <span class="deposit-owner">37027-9</span></span><br>
+									<span class="deposit-name">Bank Name: <span class="deposit-owner">Caixa Econômica Federal</span></span><br>
+									<span class="deposit-name">Account where created: <span class="deposit-owner">0448</span></span><br>
+									<button id="deposit-submit" type="submit" class="deposit-usd-button update">Submit</button>
+								</div>
+							</div>
+						</form>
+
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Deposit History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head">
+									<p class="table-item">Identification Code</p>
+									<p class="table-item">Time</p>
+									<p class="table-item">From</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">Tri Nguyen</p>
+									<p class="table-info">590.00$</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">Tri Nguyen</p>
+									<p class="table-info">590.00$</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">Tri Nguyen</p>
+									<p class="table-info">590.00$</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						
+						<!-- USD Withdraw Page -->
+					<div id="usd-withdraw-page">
+						<div class="usd-withdraw">
+							<h1 class="funds-heading">Select the bank to cash withdrawal amount and enter the account number and complete submission.</h1>
+							<p class="selected-card-info">USD <br>
+								<span class="withdraw">withdraw</span>
+							</p>
+						</div>
+
+						<hr class="funds-hr"><br>
+
+							<h1 class="attention">Working Hours</h1>
+							<p class="attention-subheading">9:00 - 18:00</p>
+							
+							<br><hr class="funds-hr"><br>
+							
+							<!-- USD Withdraw Details -->
+							<div class="user-withdraw-details">
+								<p class="withdraw-acc">Account name: <span class="withdraw-user">Tri Nguyen</span></p>
+								<p class="withdraw-acc">Withdraw Address: <span id="withdraw-manage" class="usd-manage withdraw-user">Manage Withdraw</span></p>
+								<p class="withdraw-acc">Balance: <span class="withdraw-balance">15,17245</span></p>
+							</div>
+
+							<br><hr class="funds-hr"><br>
+							
+							<!-- USD Withdraw Form -->
+							<form id="withdraw-usd">
+								<div class="usd-withdraw-container">
+									<div class="withdraw-left">
+										<p class="funds-subheading">Withdraw Amount</p>
+										<input id="verify-input" class="country" type="text" placeholder="at least 100 USD" name="realname" required> <i class="funds-question far fa-question-circle"></i><br><br>
+										<a href="#" class="withdraw-all">Withdraw All &nbsp;&nbsp; <i class="with-all-icon fas fa-long-arrow-alt-right"></i></a>
+									</div>
+
+									<div class="withdraw-right">
+										<p class="funds-subheading">Google Authentication</p>
+										<input id="verify-input" class="country" type="text" placeholder="g77qzwvcefmtih7t" name="realname" required> <i class="funds-question far fa-question-circle"></i>
+
+									</div>
+								</div>
+
+								<br><br>
+
+							<div class="cancel-enable">
+								<button type="reset" class="cancel">Cancel</button>
+								<button type="submit" class="update">Submit</button>
+							</div>
+							</form>
+
+							<!-- USD Withdraw Table -->
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Withdraw History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head-usd-withdraw ">
+									<p class="table-item">Number</p>
+									<p class="table-item">Time</p>
+									<p class="table-item">Withdraw Account</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Fee</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body-usd-withdraw ">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">37027-9</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">37027-9</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p id="table-id" class="table-info">987126412983</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p class="table-info">37027-9</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+		
+		<!-- ---------- Bitcoin CryptoCurrency Page ---------- -->
+
+					<!-- Bitcoin Withdraw Pages -->
+					<div id="bitcoin-withdraw-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To withdraw Bitcoins, Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes</h1>
+							<p class="selected-card-info">BTC <br>
+								<span class="deposit">withdraw</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Withdraw Container -->
+					<form id="crypto-withdraw">
+						<div class="crypto-withdraw">
+							<div class="crypto-withdraw-left">
+								<p class="funds-subheading">Withdraw Address</p>
+										<input id="verify-input" class="country" type="text" placeholder="1D2s9S8gGZUKFBCaQ5LR" name="realname" required> <span class="crypto-withdraw manage">Manage Address</span>
+
+										<br><br>
+
+								<p class="funds-subheading">Amount:</p>
+										<input id="verify-input" class="country" type="text" placeholder="at least 0.001 BTC" name="realname" required> &nbsp; <i class="funds-question far fa-question-circle"></i> &nbsp;
+										<a href="#" class="withdraw-all">Withdraw All &nbsp;&nbsp; <i class="with-all-icon fas fa-long-arrow-alt-right"></i></a>
+
+										<br><br>
+
+								<p class="funds-subheading">Google Authenticator:</p>
+										<input id="verify-input" class="crypto-auth country" type="text" placeholder="Input the current password generated by authenticator" name="realname" required>
+							</div>
+
+							<div class="crypto-withdraw-right">
+								<p class="crypto-withdraw-status">BTC Balance</p>
+								<div class="crypto-box-balance">
+									<span class="box-balance">0.10332114</span>
+								</div>
+							<div class="crypto-submit">
+								<button type="submit" class="crypto-withdraw-button update">Submit</button>
+							</div>
+							</div>
+						</div>
+					</form>
+						
+						<!-- Crypto Withdraw Table -->
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Withdraw History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head-usd-withdraw ">
+									<p class="table-item">Number</p>
+									<p class="table-item">Time</p>
+									<p class="table-item">Address</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Fee</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">10</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">9</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">3</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+
+
+					<!-- Bitcoin Deposit Pages -->
+					<div id="bitcoin-deposit-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To deposit Bitcoins, please follow the steps below</h1>
+							<p class="selected-card-info">BTC <br>
+								<span class="deposit">deposit</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Deposit Container -->
+						<div class="crypto-step-1-2">
+							<p class="step-01">01</p>
+							<p class="step-02">02</p>
+						</div>
+						<div class="crypto-deposit">
+							<div class="crypto-left">
+								<i class="crypto-wallet fas fa-wallet"></i>
+								<p class="wallet-text">
+									Please use your common wallet services, local wallet, mobile terminal or online wallet, select a payment and send.
+								</p>
+							</div>
+
+							<div class="crypto-right">
+								<p class="wallet-text">
+									Please paste the address below in your wallet, and fill in the amount you want to deposit, then confirm and send.
+									<br><br>
+									<span class="scanning">Scanning QR code to Pay for In the mobile terminal wallet.</span>
+
+									<br><br>
+
+									<input id="verify-input" class="scanner country" type="text" placeholder="g77qzwvcefmtih7t" name="realname" required>
+								</p>
+
+								<div class="scanner-right">
+									<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+         							class="qr-scanner img-fluid">
+         							<br>
+         							<button type="button" class="new-address qr-button" id="generate">New Address</button>
+								</div>
+							</div>
+						</div>
+						<p class="step-03">03</p>
+						<div class="crypto-center">
+							<p class="crypto-center-text"><br>
+								Once you complete sending, you can check the status of your new deposit below.
+								<br><br>
+							</p>
+						</div>
+
+
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Deposit History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head">
+									<p class="table-item">Time</p>
+									<p class="table-item">Transaction ID</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Confirmations</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">1218</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+			<!-- ---------- Ethereum CryptoCurrency Page ---------- -->
+
+					<!-- Ethereum Withdraw Pages -->
+					<div id="ethereum-withdraw-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To withdraw Ethereum, Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes</h1>
+							<p class="selected-card-info">ETH <br>
+								<span class="deposit">withdraw</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Withdraw Container -->
+					<form id="crypto-withdraw">
+						<div class="crypto-withdraw">
+							<div class="crypto-withdraw-left">
+								<p class="funds-subheading">Withdraw Address</p>
+										<input id="verify-input" class="country" type="text" placeholder="1D2s9S8gGZUKFBCaQ5LR" name="realname" required> <span class="crypto-withdraw manage">Manage Address</span>
+
+										<br><br>
+
+								<p class="funds-subheading">Amount:</p>
+										<input id="verify-input" class="country" type="text" placeholder="at least 0.001 BTC" name="realname" required> &nbsp; <i class="funds-question far fa-question-circle"></i> &nbsp;
+										<a href="#" class="withdraw-all">Withdraw All &nbsp;&nbsp; <i class="with-all-icon fas fa-long-arrow-alt-right"></i></a>
+
+										<br><br>
+
+								<p class="funds-subheading">Google Authenticator:</p>
+										<input id="verify-input" class="crypto-auth country" type="text" placeholder="Input the current password generated by authenticator" name="realname" required>
+							</div>
+
+							<div class="crypto-withdraw-right">
+								<p class="crypto-withdraw-status">ETH Balance</p>
+								<div class="crypto-box-balance">
+									<span class="box-balance">0.02234512</span>
+								</div>
+							<div class="crypto-submit">
+								<button type="submit" class="crypto-withdraw-button update">Submit</button>
+							</div>
+							</div>
+						</div>
+					</form>
+						
+						<!-- Crypto Withdraw Table -->
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Withdraw History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head-usd-withdraw ">
+									<p class="table-item">Number</p>
+									<p class="table-item">Time</p>
+									<p class="table-item">Address</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Fee</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">10</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">9</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">3</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+					<!-- Ethereum Deposit Pages -->
+					<div id="ethereum-deposit-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To deposit Ethereum, please follow the steps below</h1>
+							<p class="selected-card-info">ETH <br>
+								<span class="deposit">deposit</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Deposit Container -->
+						<div class="crypto-step-1-2">
+							<p class="step-01">01</p>
+							<p class="step-02">02</p>
+						</div>
+						<div class="crypto-deposit">
+							<div class="crypto-left">
+								<i class="crypto-wallet fas fa-wallet"></i>
+								<p class="wallet-text">
+									Please use your common wallet services, local wallet, mobile terminal or online wallet, select a payment and send.
+								</p>
+							</div>
+
+							<div class="crypto-right">
+								<p class="wallet-text">
+									Please paste the address blow in your wallet, and fill in the amount you want to deposit, then confirm and send.
+									<br><br>
+									<span class="scanning">Scanning QR code to Pay for In the mobile terminal wallet.</span>
+
+									<br><br>
+
+									<input id="verify-input" class="scanner country" type="text" placeholder="g77qzwvcefmtih7t" name="realname" required>
+								</p>
+
+								<div class="scanner-right">
+									<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+         							class="qr-scanner img-fluid">
+         							<br>
+         							<button type="button" class="new-address qr-button" id="generate">New Address</button>
+								</div>
+							</div>
+						</div>
+						<p class="step-03">03</p>
+						<div class="crypto-center">
+							<p class="crypto-center-text"><br>
+								Once you complete sending, you can check the status of your new deposit below.
+								<br><br>
+							</p>
+						</div>
+
+
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Deposit History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head">
+									<p class="table-item">Time</p>
+									<p class="table-item">Transaction ID</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Confirmations</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">1218</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+			<!-- ---------- Litecoin CryptoCurrency Page ---------- -->
+
+					<!-- Litecoin Withdraw Pages -->
+					<div id="litecoin-withdraw-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To withdraw Litecoin, Please fill in the address and amount, then submit the form. It will be confirmed in 10 minutes</h1>
+							<p class="selected-card-info">LTC <br>
+								<span class="deposit">withdraw</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Withdraw Container -->
+					<form id="crypto-withdraw">
+						<div class="crypto-withdraw">
+							<div class="crypto-withdraw-left">
+								<p class="funds-subheading">Withdraw Address</p>
+										<input id="verify-input" class="country" type="text" placeholder="1D2s9S8gGZUKFBCaQ5LR" name="realname" required> <span class="crypto-withdraw manage">Manage Address</span>
+
+										<br><br>
+
+								<p class="funds-subheading">Amount:</p>
+										<input id="verify-input" class="country" type="text" placeholder="at least 0.001 BTC" name="realname" required> &nbsp; <i class="funds-question far fa-question-circle"></i> &nbsp;
+										<a href="#" class="withdraw-all">Withdraw All &nbsp;&nbsp; <i class="with-all-icon fas fa-long-arrow-alt-right"></i></a>
+
+										<br><br>
+
+								<p class="funds-subheading">Google Authenticator:</p>
+										<input id="verify-input" class="crypto-auth country" type="text" placeholder="Input the current password generated by authenticator" name="realname" required>
+							</div>
+
+							<div class="crypto-withdraw-right">
+								<p class="crypto-withdraw-status">LTC Balance</p>
+								<div class="crypto-box-balance">
+									<span class="box-balance">9,1928351</span>
+								</div>
+							<div class="crypto-submit">
+								<button type="submit" class="crypto-withdraw-button update">Submit</button>
+							</div>
+							</div>
+						</div>
+					</form>
+						
+						<!-- Crypto Withdraw Table -->
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Withdraw History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head-usd-withdraw ">
+									<p class="table-item">Number</p>
+									<p class="table-item">Time</p>
+									<p class="table-item">Address</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Fee</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">10</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">9</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+
+								<div class="history-body-usd-withdraw ">
+									<p class="table-info">3</p>
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b084542abd8...</p>
+									<p class="table-info">590.00$</p>
+									<p class="table-info">2.99$</p>
+									<p id="table-state-accept" class="table-info">Done</p>
+								</div>
+							</div>
+						</div>
+
+						
+					</div>
+
+					<!-- Litecoin Deposit Pages -->
+					<div id="litecoin-deposit-page">
+						<div class="usd-deposit">
+							<h1 class="funds-heading">To deposit Litecoin, please follow the steps below</h1>
+							<p class="selected-card-info">LTC <br>
+								<span class="deposit">deposit</span>
+							</p>
+						</div>
+
+						
+						<!-- CryptoCurrencies Deposit Container -->
+						<div class="crypto-step-1-2">
+							<p class="step-01">01</p>
+							<p class="step-02">02</p>
+						</div>
+						<div class="crypto-deposit">
+							<div class="crypto-left">
+								<i class="crypto-wallet fas fa-wallet"></i>
+								<p class="wallet-text">
+									Please use your common wallet services, local wallet, mobile terminal or online wallet, select a payment and send.
+								</p>
+							</div>
+
+							<div class="crypto-right">
+								<p class="wallet-text">
+									Please paste the address blow in your wallet, and fill in the amount you want to deposit, then confirm and send.
+									<br><br>
+									<span class="scanning">Scanning QR code to Pay for In the mobile terminal wallet.</span>
+
+									<br><br>
+
+									<input id="verify-input" class="scanner country" type="text" placeholder="g77qzwvcefmtih7t" name="realname" required>
+								</p>
+
+								<div class="scanner-right">
+									<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+         							class="qr-scanner img-fluid">
+         							<br>
+         							<button type="button" class="new-address qr-button" id="generate">New Address</button>
+								</div>
+							</div>
+						</div>
+						<p class="step-03">03</p>
+						<div class="crypto-center">
+							<p class="crypto-center-text"><br>
+								Once you complete sending, you can check the status of your new deposit below.
+								<br><br>
+							</p>
+						</div>
+
+
+						<div class="deposit-history-container">
+							<h1 class="deposit-history-heading">Deposit History</h1><br>
+
+							<div class="history-table">
+								<div class="history-head">
+									<p class="table-item">Time</p>
+									<p class="table-item">Transaction ID</p>
+									<p class="table-item">Amount</p>
+									<p class="table-item">Confirmations</p>
+									<p class="table-item">State/Action</p>
+								</div>
+								
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">1218</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+
+								<div class="history-body">
+									<p class="table-info">2018.08.03 - 05:05</p>
+									<p id="table-id" class="table-info">b671236bqwas122</p>
+									<p class="table-info">590.00%</p>
+									<p class="table-info">6</p>
+									<p id="table-state-accept" class="table-info">Accepted</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+						<!-- End of Funds MAIN Container -->					
+					</div>
+
+					<!-- End of Funds Container -->
+				</div>
+
+							
+						
+				
+
+
+
+
+							<!-- End of Menu Selection (right column) -->
+						</div>
+					
+
+					
+
+					
+					
+
+					<!-- Page Wrapper -->
+					<!-- End of Page Wrapper -->
+				</div>
+
+				
+
+
+
+				
+
+
+			
+
+
+			
+		
+	</body>
+
+</html>

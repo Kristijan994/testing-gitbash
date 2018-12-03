@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 25">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.1;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #1a2340;
+        stroke-width: 2px;
+      }
+
+      .cls-2, .cls-3 {
+        opacity: 0.6;
+      }
+
+      .cls-3 {
+        fill: #1a2340;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_35" data-name="Group 35" class="cls-1" transform="translate(-570 -384)">
+    <g id="Ellipse_8" data-name="Ellipse 8" class="cls-2" transform="translate(570 384)">
+      <ellipse class="cls-4" cx="13.5" cy="12.5" rx="13.5" ry="12.5"/>
+      <ellipse class="cls-5" cx="13.5" cy="12.5" rx="12.5" ry="11.5"/>
+    </g>
+    <path id="Close" class="cls-3" d="M8.519,86.33l3.512-3.6a1.151,1.151,0,0,0,0-1.6l-.781-.8a1.085,1.085,0,0,0-1.561,0l-3.512,3.6-3.512-3.6a1.085,1.085,0,0,0-1.561,0l-.781.8a1.151,1.151,0,0,0,0,1.6l3.512,3.6-3.512,3.6a1.151,1.151,0,0,0,0,1.6l.781.8a1.085,1.085,0,0,0,1.561,0l3.512-3.6,3.512,3.6a1.085,1.085,0,0,0,1.561,0l.781-.8a1.151,1.151,0,0,0,0-1.6Z" transform="translate(577.47 310.436)"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.25 30.724">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff8080;
+      }
+    </style>
+  </defs>
+  <g id="InfoBoxicon" transform="translate(-2 -2)">
+    <path id="Path_60" data-name="Path 60" class="cls-1" d="M17.625,2A15.513,15.513,0,0,0,2,17.362,15.513,15.513,0,0,0,17.625,32.724,15.513,15.513,0,0,0,33.25,17.362,15.513,15.513,0,0,0,17.625,2Zm0,27.652a12.411,12.411,0,0,1-12.5-12.29,12.411,12.411,0,0,1,12.5-12.29,12.411,12.411,0,0,1,12.5,12.29A12.411,12.411,0,0,1,17.625,29.652Z" transform="translate(0 0)"/>
+    <path id="Path_61" data-name="Path 61" class="cls-1" d="M11,13.145h3.125v9.217H11ZM11,7h3.125v3.072H11Z" transform="translate(5.062 2.681)"/>
+  </g>
+</svg>

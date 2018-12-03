@@ -1,0 +1,274 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+        <title>X2 | User Profile</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <link href="Images/favicon.png" rel="shortcut icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Boxicons -->
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+
+
+        <!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/user-menu.css">
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+        <script src="js/user-menu.js"></script>
+
+		
+	</head>
+		
+	<body>
+
+		<!-- X2 Preloader -->
+		<div class="preloader-other">
+			<div class="preloader-dot"></div>
+			<img src="Images/logoWhite.png" class="preloader-logo img-fluid">
+		</div>
+		
+		<!-- SUCCESS Notification -->
+		<div class="edit-success">
+			<i class="success-icon fas fa-check-circle"></i>
+			<p class="success-info">Your account changes have been <br> updated SUCCESSFULLY!</p>
+		</div>
+
+		<!-- Mobile & Tablet Navigation -->
+		<span id="open" class="mobile-icon">&#9776;</span>
+		<!-- Mobile Logo -->
+		<a href="index.html">
+			<img src="Images/logo-blueDark.png" class="logo-mobile img-fluid">
+		</a>
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Sidebar Navigation -->
+			<div class="sidebar-nav">
+				<!-- Mobile Close ICON -->
+				<span class="close-icon">&times;</span>
+				
+				<div class="sidebar-head">
+					<a href="index.html">
+						<img src="Images/logoWhite.png" class="logo img-fluid">
+					</a>
+				</div>
+
+				<div class="sidebar-body">
+					<!-- User Avatar -->
+					<div class="avatar-center">
+						<img src="Images/userAvatar.svg" class="avatar img-fluid">
+					</div>
+
+					<!-- First User Navigation -->
+					<div class="profile-navigation-1">
+						<ul class="my-account">
+							<li class="my-account-item">
+								<a href="#" class="my-account-link"><i class="first-nav-icon fas fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp; Kristijan Popchev&nbsp;<i class="my-account-arrow lang-arrow not-active fas fa-angle-down"></i></a>
+							</li>
+						</ul>
+
+						<!-- My Account Dropdown -->
+						<ul id="account-dropdown" class="first-nav">
+							<a href="my-profile.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-person-booth"></i><span class="nav-text">My Profile</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-ticket-alt"></i><span class="nav-text">Tickets</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li id="language" class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-language"></i><span class="nav-text">Languages <i class="lang-arrow not-active fas fa-angle-down"></i></span>
+									</div>
+
+									
+								</li>
+								<!-- Dropdown -->
+									<ul class="language-dropdown">
+										<li class="language-list text-center">
+											<a href="#" class="en language-link">
+												<img src="Images/usa-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="ch language-link">
+												<img src="Images/china-flag.png" class="flags img-fluid">
+											</a>
+
+											<a href="#" class="kr language-link">
+												<img src="Images/korea-flag.png" class="flags img-fluid">
+											</a>
+										</li>
+									</ul>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active far fa-edit" style="opacity: 1;"></i><span class="nav-text">Edit Account</span>
+									</div>
+								</li>
+							</a>
+
+							<a href="#" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-code"></i><span class="nav-text">API Tokens</span>
+									</div>
+								</li>
+							</a>
+
+
+							<a href="login.html" class="first-nav-link text-left">
+								<li class="first-nav-item">
+									<div class="nav-grid">
+										<i class="first-nav-icon not-active fas fa-sign-out-alt"></i><span class="nav-text">Logout</span>
+									</div>
+								</li>
+							</a>
+						</ul>
+
+						<!-- End of First User Navigation -->
+					</div>
+
+					<!-- Second User Navigation -->
+					<div class="profile-navigation-2">
+
+						
+						<!-- New User Menu -->
+						<div class="user-menu">
+							<div id="menu-list" class="exchange">
+								<i class="first-nav-icon not-active fas fa-exchange-alt"></i>
+								<span class="menu-title">Exchange</span>
+							</div>
+							
+							<a href="funds.html" class="sidebar-link">
+							<div id="menu-list" class="funds"> <!-- menu-list-active -->
+								<i class="first-nav-icon not-active fas fa-funnel-dollar"></i>
+								<span class="menu-title">Funds</span>
+							</div>
+							</a>
+
+							<div id="menu-list" class="history">
+								<i class="first-nav-icon not-active fas fa-history"></i>
+								<span class="menu-title">History</span>
+							</div>
+							
+							<a href="verification.html" class="sidebar-link">
+							<div id="menu-list" class="verification">
+								<i class="first-nav-icon not-active fas fa-wrench"></i>
+								<span class="menu-title">Verification</span>
+							</div>
+							</a>
+						</div>
+
+
+
+
+						<!-- End of Second User Navigation -->
+					</div>
+
+					<!-- End of Sidebar Body -->
+				</div>
+
+				<div class="sidebar-footer">
+
+					<div class="levels-limits">
+						<span class="level-limit-info">Level</span>
+						<div class="current-level-limit">
+							<span class="badge-level">2</span>
+						</div>
+
+						<span class="level-limit-info">Daily</span>
+						<div class="current-level-limit" style="text-align: left;">
+							<span class="badge-limit">$10,000</span>
+						</div>
+					</div>
+
+					<div class="account-info">
+						<p class="verifications-info">
+							Continue with account verifications to level up and increase your daily limits up to <span class="unlimited">UNLIMITED</span>
+						</p>
+					</div>
+				</div>
+				<!-- End of Sidebar Navigation -->
+			</div>
+
+			
+			<!-- Main Container for Dropdown Pages -->
+			<div class="selected-container">
+				<!-- <form id="form-edit"> -->
+				<div class="edit-container">
+					
+						
+						<!-- Edit Username Box -->
+						<div class="edit-box">
+							<div class="edit-box-head">
+								<p class="edit-heading">Username</p>
+								<i class="editing-icon editing-icon-1 far fa-edit"></i>
+							</div>
+							<div class="edit-box-body">
+								<input id="edit-input" class="edit-username main-placeholder" type="text" name="username" placeholder="Tri Songz" disabled>
+								<input id="edit-input" class="edit-username edit-focus-username" type="text" name="username" placeholder="New Username">
+								<input id="edit-input" class="edit-username edit-focus-username" type="text" name="username" placeholder="Repeat New Username">
+							</div>
+						</div>
+
+						<!-- Edit Username Box -->
+						<div class="edit-box">
+							<div class="edit-box-head">
+								<p class="edit-heading">Email Address</p>
+								<i class="editing-icon editing-icon-2 far fa-edit"></i>
+							</div>
+							<div class="edit-box-body">
+								<input id="edit-input" class="edit-email main-placeholder" type="text" name="email" placeholder="ts@songzcorp.com" disabled>
+								<input id="edit-input" class="edit-email edit-focus-email" type="text" name="username" placeholder="New Password">
+								<input id="edit-input" class="edit-email edit-focus-email" type="text" name="username" placeholder="Repeat New Password">
+							</div>
+						</div>
+
+						<!-- Edit Username Box -->
+						<div class="edit-box">
+							<div class="edit-box-head">
+								<p class="edit-heading">Password</p>
+								<i class="editing-icon editing-icon-3 far fa-edit"></i>
+							</div>
+							<div class="edit-box-body">
+								<input id="edit-input" class="edit-email main-placeholder" type="password" name="password" placeholder="MeowMeow15!" disabled>
+								<input id="edit-input" class="edit-email edit-focus-password" type="password" name="username" placeholder="New Password">
+								<input id="edit-input" class="edit-email edit-focus-password" type="password" name="username" placeholder="Repeat New Password">
+							</div>
+						</div>
+						<button class="save-changes">Save Changes</button>
+				</div>
+
+				<!-- </form> -->
+				<!-- End of Selected Container -->
+			</div>
+
+	</body>
+
+</html>

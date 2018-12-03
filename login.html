@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+        <title>X2 | Login</title>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <link href="Images/favicon.png" rel="shortcut icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CDN libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- Boxicons -->
+		<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+
+
+        <!-- Styles -->
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/signup-login-reset.css">
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+	</head>
+
+	<body>
+	
+	<div class="login-container">
+		<div class="signup-right">
+				<a href="login.html">
+					<img src="Images/logo-blueDark.png" alt="" class="login-logo img-fluid">
+				</a>
+				<h1 class="form-heading">Sign In to your Account<span class="form-dot">.</span></h1>
+					<p class="form-subheading">Fill in your account details in the form below</p>
+					
+				<form class="x2-form">
+					
+				
+				<!-- NOTIFICATIONS -->
+				
+				<!-- div.wrong-inputs - NEEDS to be HIDDEN if we don't have an error -->
+					<div class="wrong-inputs">
+						<img src="Images/loginNotification.svg" alt="" class="notifications img-fluid">
+						<p class="wrong-info">
+							The Email address or password you’ve entered is incorrect. <br>
+							Please try again.
+						</p>
+					</div>
+
+					<br>
+					
+					<!-- .wrong - This class NEEDS to be REMOVED if we don't have an error -->
+					<div class="login-inputs">
+						<input type="email" class="wrong form-input" placeholder="Email Address" required>
+						<input type="password" class="wrong form-input" placeholder="Repeat Password" required>
+					</div>
+
+					
+
+				
+
+					<!-- Submit -->
+				<div class="login-page login-bottom">
+					<button type="submit" class="login-button">Login</button>
+					
+					<br><br>
+						<p class="login-switcher">Don't have an account? <a href="signup.html" class="login">Sign Up here</a> </p>
+
+						<img src="Images/SignUp/divider.svg" alt="" class="divider img-fluid">
+						
+						<a href="password-reset.html" style="text-decoration: none;color:#1A2340;">
+							<p class="reset-password" style="cursor: pointer;">Request a Password Reset</p>
+						</a>
+				</div>
+				</form>
+			</div>
+
+			<!-- End of Login Container -->
+		</div>
+		
+	</body>
+</html>
